@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css" media="all">
 </head>
 <body>
-  <h1>LIFF7</h1>
+  <h1>LIFF8</h1>
   <p id="os"><b>OS:</b> </p>
   <p id="language"><b>Language:</b> </p>
   <p id="version"><b>Version:</b> </p>
@@ -49,6 +49,12 @@
     }
 
     async function shareMsg() {
+      await liff.shareTargetPicker([
+        {
+          "type":"text",
+          "text":"a lo test"
+        }
+      ]);
     }
 
     function logOut() {
