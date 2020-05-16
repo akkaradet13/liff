@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css" media="all">
 </head>
 <body>
-  <h1>LIFF</h1>
+  <h1>LIFF1</h1>
   <p id="os"><b>OS:</b> </p>
   <p id="language"><b>Language:</b> </p>
   <p id="version"><b>Version:</b> </p>
@@ -67,7 +67,8 @@
     }
 
     async function sendMsg() {
-      if(liff.getContext().type != "none"){
+      //สูงสุด5
+      if(liff.getContext().type !== "none"){
         await liff.sendMessages([
           {
             "type": 'sticker',
